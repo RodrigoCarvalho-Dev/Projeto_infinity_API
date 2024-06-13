@@ -36,8 +36,8 @@ body{
     flex-direction: column;
     gap: 10px;
     background: var(--gradient_test);
-    backdrop-filter: blur(1000px);
-
+    align-items: center;
+    overflow-x : hidden;
 }
 
 
@@ -45,15 +45,19 @@ body{
 
 
 #header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 50;
     background-color: transparent;
-    backdrop-filter: blur(10px);
-    box-sizing: border-box;
+    backdrop-filter: blur(50px);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1em;
-    border-bottom: 1px solid #fff;
     color: #fff;
+    width: 80%;
+    border-bottom: 1px double #fff;
     transition: 0.2s ease-in-out;
     
 }
@@ -147,6 +151,7 @@ body{
     background: linear-gradient(to left , rgba(0, 0, 255, 0.1) 10% , #000000 70%);
     backdrop-filter: blur(2px) ;
     filter: blur();
+    width: 100%;
 }
 
 #footer a{
@@ -219,7 +224,7 @@ body{
     background-color: rgba(255, 41, 41, 0.185);
     color: #fff;
     border-radius: 5px;
-    
+
 }
 
 #conteiner_button{

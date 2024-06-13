@@ -11,15 +11,24 @@ const conteiner_button_footer = document.querySelector("#conteiner_button_footer
 const button = document.getElementsByClassName("button");
 const conteiner_button_main = document.querySelector("#conteiner_button_main");
 const text = document.getElementById(`text`);
-const User_name_Rodrigo = document.querySelector("#user_Name_Rodrigo")
-const body = document.querySelector("body")
+const User_name_Rodrigo = document.querySelector("#user_Name_Rodrigo");
+const body = document.querySelector("body");
+const header = document.querySelector(`#header`);
 
 Rodrigo_User();
 
 window.addEventListener("scroll" , () => {
 
-   
-    
+    if ( window.scrollY >= 100){
+
+        header.style.borderBottom = "3px double #ffffff2a";
+        header.style.transition = 0.1 + "s";
+
+
+   } else if ( window.scrollY <= 100){
+        header.style.borderBottom = "1px double #fff";
+        header.style.transition = 0.1 + "s";
+    }
 
 });
 
