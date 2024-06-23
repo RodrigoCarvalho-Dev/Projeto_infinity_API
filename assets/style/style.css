@@ -12,7 +12,7 @@
         #000000
     ) ;
 
-    --gradient_test : linear-gradient(30deg, #000000 0%,  rgba(0, 0, 255, 0.767) 800% , #000000 100%) ;
+    --gradient_test : linear-gradient(45deg, #fff 80%,  #0000ff5A 100%) ;
 
   
 }
@@ -27,7 +27,7 @@
     padding: 0;
     margin: 0;
     font-family: "jetBrains";
-   
+    
    
 }
 
@@ -38,6 +38,7 @@ body{
     background: var(--gradient_test);
     align-items: center;
     overflow-x : hidden;
+    min-height: 100vh;
 }
 
 
@@ -50,14 +51,14 @@ body{
     left: 0;
     z-index: 50;
     background-color: transparent;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(8px);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1em;
-    color: #fff;
+    color: #000000;
     width: 80%;
-    border-bottom: 1px double #fff;
+    border-bottom: 1px double #000000;
     transition: 0.2s ease-in-out;
     
 }
@@ -78,7 +79,7 @@ body{
 
 #title img{
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #000000;
     border: none;
 }
 
@@ -88,7 +89,7 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    color: #fff;
+    color: #000000;
    background: var(--gradient_test_2);
     height: 69vh;
     position: relative;
@@ -117,7 +118,7 @@ body{
     padding:5px;
     border-radius: 5px;
     background-color: transparent ;
-    color : #fff ;
+    color : #000000 ;
 
 }
 
@@ -125,7 +126,7 @@ body{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    color: #ffffff;
+    color: #000000;
 
 }
 
@@ -147,15 +148,14 @@ body{
     flex-direction: row;
     border-top: 1px solid rgba(255, 255, 255, 0.7);
     gap: 20px;
-    color: #fff;
-    background: linear-gradient(to left , rgba(0, 0, 255, 0.1) 10% , #000000 70%);
+    color: #000000;
+    background: linear-gradient(270deg ,  #fff 70% , #0000ff5A 100%);
     backdrop-filter: blur(2px) ;
-    filter: blur();
     width: 100%;
 }
 
 #footer a{
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     transition: 0.2s ease-in-out;
 }
@@ -178,7 +178,7 @@ body{
 }
 
 .button {
-    color: #fff;
+    color: #000000;
     background-color: transparent;
     display: flex;
     padding: 5px;
@@ -204,7 +204,7 @@ body{
 }
 
 #button_reset{
-    color: #fff;
+    color: #000000;
     background-color: transparent;
     display: flex;
     padding: 5px;
@@ -222,7 +222,7 @@ body{
 
 #button_reset:hover{
     background-color: rgba(255, 41, 41, 0.185);
-    color: #fff;
+    color: #000000;
     border-radius: 5px;
 
 }
